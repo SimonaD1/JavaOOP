@@ -1,18 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        int [] grades = {6, 5, 4, 6, 5};
-        int [] grades1 = {6, 6, 4, 3, 5};
+        Invoice myInvoice = new Invoice("firstInvoice","BAMBOODOOL",234.3);
+        Invoice myInvoice1 = new Invoice("secondInvoice","LOODOOL",23.3);
+        Invoice myInvoice2 = new Invoice("thirdInvoice","33DOOL",443.4);
 
-
-
-        Student student = new Student("Simona","Dimitrovska","Proleterska 10","Female",22,4,grades);
-        System.out.println(student);
-        Student student1 = new Student("Sanja","Peteva","8Dekemvri","Female",21,3,grades1);
-        System.out.println(student1);
-
-
-
+        System.out.printf("id: %s , %s , %s \n", myInvoice.getID(), myInvoice.getName(), myInvoice.getCompany());
+        System.out.printf("id: %s, %s , %s \n", myInvoice1.getID(), myInvoice1.getName(), myInvoice1.getCompany());
+        System.out.printf("id: %s , %s, %s ", myInvoice2.getID(), myInvoice2.getName(), myInvoice2.getCompany());
 
     }
 }
